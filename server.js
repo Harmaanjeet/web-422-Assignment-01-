@@ -1,4 +1,18 @@
-//
+/****************************************************************************
+* I declare that this assignment is my own work in accordance with the Seneca Academic
+* Policy. No part of this assignment has been copied manually or electronically from
+* any other source (including web sites) or distributed to other students.
+*
+* https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
+*
+* Assignment: 2247 / 1
+* Student Name: Harmanjeet Singh Hara
+* Student Email: hhara@myseneca.ca
+* Course/Section: WEB422/ZAA
+* Deployment URL: https://web-422-assignment-01-4pgt-7k10k8cov-harmaanjeets-projects.vercel.app
+*
+*****************************************************************************/
+
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -28,7 +42,7 @@ app.get('/', (req, res) => {
 
 //Add a new listing
 app.post('/api/listings', (req, res) => {
-  console.log("Received data for new listing:", req.body); // Log the received data
+  console.log("Received data for new listing:", req.body); 
   db.addNewListing(req.body)
     .then((newListing) => {
       res.status(201).json(newListing);
