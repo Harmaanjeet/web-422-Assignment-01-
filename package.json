@@ -1,1 +1,29 @@
-
+{
+  "name": "web422_assignment1",
+  "version": "1.0.0",
+  "description": "Json File for web422 assessment01",
+  "main": "server.js",
+  "scripts": {
+    "test": "TEST"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Harmaanjeet/web-422-Assignment-01-"
+  },
+  "keywords": [
+    "N/a"
+  ],
+  "author": "Harmanjeet Singh Hara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N/a/issues"
+  },
+  "homepage": "https://github.com/N/a#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.6.2"
+  }
+}
